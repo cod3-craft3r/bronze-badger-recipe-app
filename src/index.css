@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ysabeau+SC&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-secondary {
+        @apply bg-primary-color-light dark:bg-primary-color-dark hover:bg-primary-hover-light dark:hover:bg-primary-hover-dark hover:text-primary-color-light dark:hover:text-primary-text-dark  text-center text-primary-text-light rounded-lg transition-colors duration-300;
+    }
+    .btn-primary {
+        @apply bg-secondary-color-light hover:border-primary-color-light text-primary-text-light border-2 border-secondary-color-light dark:bg-secondary-color-dark dark:border-secondary-color-dark dark:hover:border-primary-color-dark text-center dark:text-primary-text-dark rounded-lg transition-colors duration-300;
+    }
+    .inp-secondary {
+        @apply bg-primary-color-light dark:bg-primary-color-dark hover:bg-primary-hover-light dark:hover:bg-primary-hover-dark text-primary-text-light rounded-xl placeholder-primary-text-light focus:outline-none transition-colors duration-300;
+    }
+    .inp-primary {
+        @apply bg-secondary-color-light hover:border-primary-color-light text-secondary-text-light placeholder-primary-text-light border-2 border-secondary-color-light dark:bg-secondary-color-dark dark:border-secondary-color-dark dark:hover:border-primary-color-dark dark:text-primary-text-dark focus:outline-none transition-colors duration-300;
+    }
+  }
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
